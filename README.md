@@ -2,14 +2,15 @@
  Challenge Persona
 
 ## Atributos
- Long dni - Primaria -Notnull
- String nombre - Notnull
- String apellido - Notnull
- Boolean empleado - Notnull
+- Long dni - Primaria - Notnull
+- String nombre - Notnull 
+- String apellido - Notnull
+- Boolean empleado - Notnull
+ 
  
  ## Uso
  
- Alta persona : 
+- Alta persona : 
   Solicitud POST '/persona/A'
  
  {
@@ -20,18 +21,24 @@
  }
 
  Respuesta
+ 
  201 - Created
+ 
  400 - BadRequest - Dni ya existente en Base de Datos
  
-Baja persona : 
- Solicitud DELETE "/persona/B/{dni}"
- Parametros : Long dni > Requerido. Numero de dni de la persona a eliminar.
+ 
+ - Baja persona : 
+   Solicitud DELETE "/persona/B/{dni}"
+   Parametros : Long dni > Requerido. Numero de dni de la persona a eliminar.
  
  Respuesta
+ 
  200 - Ok
+ 
  400 - BadRequest - Dni no existente en Base de Datos
  
- Modificacion persona : 
+ 
+- Modificacion persona : 
  Solicitud PUT "/persona/M"
  
  {
@@ -42,5 +49,7 @@ Baja persona :
  }
  
  Respuesta
+ 
  200 - Ok
+ 
  400 - BadRequest - Dni no existente en Base de Datos
